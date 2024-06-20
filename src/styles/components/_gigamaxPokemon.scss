@@ -1,0 +1,99 @@
+.gigaPokemon {
+    text-align: center;
+  
+    .radio-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 75px;
+      margin-bottom: 20px;
+      background: $color-3;
+      border-radius: 20px;
+      padding: 10px;
+      color: $white;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.452);
+  
+      .left-container {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+      }
+  
+      .center-container {
+        flex-grow: 1;
+        margin-right: 135px;
+      }
+  
+      .right-container {
+        display: flex;
+        align-items: center;
+      }
+  
+      input[type="range"] {
+        transform: translateY(1px);
+      }
+  
+      label {
+        margin-left: 10px;
+        cursor: pointer;
+      }
+    }
+  
+    .input-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px; /* Ajuste le margin pour espacer correctement */
+    }
+  
+    input[type="text"] {
+      padding: 10px;
+      border-radius: 40px;
+      font-size: 1rem;
+      border: 3px solid $color-1;
+      outline: none;
+      transition: 0.4s;
+      text-align: center;
+      width: 300px;
+  
+      &:focus {
+        background: $color-1;
+        border-radius: 40px;
+        color: $white;
+      }
+    }
+  
+    #generation-select {
+      padding: 10px;
+      border-radius: 40px;
+      font-size: 1rem;
+      border: 3px solid $color-1;
+      outline: none;
+      transition: 0.4s;
+      text-align: center;
+      width: 220px;
+    }
+  
+    button {
+      margin: 20px;
+      background: none;
+      border: 2px solid $color-1;
+      padding: 4px 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.2s;
+  
+      &:hover {
+        background: $color-1;
+      }
+    }
+  
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      cursor: pointer;
+    }
+  }

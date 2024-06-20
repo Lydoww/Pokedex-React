@@ -1,0 +1,118 @@
+.pokemons {
+  text-align: center;
+
+  .radio-container {
+    display: flex;
+    flex-wrap: wrap; // Permet de passer à la ligne en cas de besoin
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    margin-bottom: 20px;
+    background: $color-3;
+    border-radius: 20px;
+    padding: 10px;
+    color: $white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.452);
+
+    .left-container,
+    .center-container,
+    .right-container {
+      flex: 1; // Prend autant d'espace disponible
+
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px; // Ajoute un espace en bas pour les éléments
+    }
+
+    .left-container {
+      gap: 40px;
+    }
+
+    .center-container {
+      justify-content: center; // Centre l'input de recherche
+    }
+
+    .right-container {
+      justify-content: flex-end; // Aligne à droite la sélection de génération
+    }
+
+    input[type="range"] {
+      transform: translateY(1px);
+    }
+
+    label {
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .radio-container {
+      flex-direction: column;
+      height: auto;
+
+      .center-container {
+        margin-right: 0;
+      }
+    }
+  }
+
+  @media (max-width: 400px) {
+    .radio-container .center-container {
+      width: 200px;
+    }
+  }
+  .input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Ajuste le margin pour espacer correctement */
+  }
+
+  input[type="text"] {
+    padding: 10px;
+    border-radius: 40px;
+    font-size: 1rem;
+    border: 3px solid $color-1;
+    outline: none;
+    transition: 0.4s;
+    text-align: center;
+    width: 300px;
+
+    &:focus {
+      background: $color-1;
+      border-radius: 40px;
+      color: $white;
+    }
+  }
+
+  #generation-select {
+    padding: 10px;
+    border-radius: 40px;
+    font-size: 1rem;
+    border: 3px solid $color-1;
+    outline: none;
+    transition: 0.4s;
+    text-align: center;
+    width: 220px;
+  }
+
+  button {
+    margin: 20px;
+    background: none;
+    border: 2px solid $color-1;
+    padding: 4px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+      background: $color-1;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

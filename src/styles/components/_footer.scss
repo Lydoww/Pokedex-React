@@ -1,0 +1,18 @@
+.radio-container-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    margin-top : 20px;
+    margin-bottom: 20px;
+    background: $color-3;
+    border-radius: 20px;
+    color: $white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.452);
+    }
+
+
+.icon {
+    width: 40px;
+    color: white;
+}

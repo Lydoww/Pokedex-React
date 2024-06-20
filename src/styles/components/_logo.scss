@@ -1,0 +1,53 @@
+.logo {
+  @include verticalCenter;
+  margin: 5px auto;
+  width: 1830px;
+  height: 200px;
+  border-radius: 20px;
+  padding: 5px 5px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.507);
+  background: url(../../assets/img/pokemon-banner.jpg) center/cover;
+
+  img {
+    height: 40px;
+  }
+  h3 {
+    margin-left: 10px;
+    color: $color-1;
+  }
+}
+
+// RESPONSIVE 
+
+.logo {
+  @include verticalCenter;
+  margin: 5px auto;
+  width: 100%; /* Par défaut, la bannière occupe toute la largeur disponible */
+  max-width: 1830px; /* Largeur maximale de la bannière */
+  height: 200px;
+  border-radius: 20px;
+  padding: 5px 5px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.507);
+  background: url(../../assets/img/pokemon-banner.jpg) center/cover;
+
+  img {
+    height: 40px;
+  }
+  h3 {
+    margin-left: 10px;
+    color: $color-1;
+  }
+
+  @media (max-width: 1200px) {
+    width: 100%; 
+  }
+
+  @media (max-width: 768px) {
+    width: 100%; 
+    height: 150px; 
+  }
+
+  @media (max-width: 480px) {
+    height: 100px; 
+  }
+}
