@@ -13,8 +13,8 @@ const ModalPokemonGmax = ({ isOpen, closeModal, pokemon }) => {
             isOpen={isOpen}
             onRequestClose={closeModal}
             contentLabel="Détails du Pokémon"
-            className="ReactModal__Content" // Utilisation de la classe CSS pour styliser le modal
-            overlayClassName="ReactModal__Overlay" // Classe pour styliser l'overlay du modal si nécessaire
+            className="ModalPokemonGmax__Content" // Classe CSS pour styliser le contenu du modal
+            overlayClassName="ModalPokemonGmax__Overlay" // Classe CSS pour styliser l'overlay du modal
         >
             {pokemon && (
                 <div className="modal-content">
