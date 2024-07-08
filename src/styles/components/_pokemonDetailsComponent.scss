@@ -9,22 +9,24 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+    max-width: 800px; /* Ajustez selon vos besoins */
+    margin: auto; /* Centre les éléments */
 }
 
 .pokemon-image {
     flex: 1;
     text-align: center;
-    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0;
+    max-width: 100%;
 }
 
 .pokemon-image img {
-    width: auto;
+    width: 100%;
     height: auto;
-    max-width: 100%;
+    max-width: 300px; /* Ajustez selon vos besoins */
     filter: drop-shadow(6px 2px 6px rgba(0, 0, 0, 0.4));
 }
 
@@ -49,6 +51,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px 0;
     text-align: center;
+    margin: auto; /* Centre l'élément */
 }
 
 .pokemon-details h1 {
@@ -84,8 +87,8 @@
 .evolutions ul {
     list-style-type: none;
     padding: 0;
-    display: inline-block; /* Center the list */
-    text-align: left; /* Align list items to the left */
+    display: inline-block; /* Centre la liste */
+    text-align: left; /* Aligner les éléments de la liste à gauche */
 }
 
 .evolutions li {
@@ -114,7 +117,7 @@ button {
     color: black;
     cursor: pointer;
     font-size: 16px;
-    min-width: 150px; /* Adjust the minimum width */
+    min-width: 150px; /* Ajustez la largeur minimale */
 }
 
 button:active {
@@ -131,23 +134,20 @@ button:active {
     transition: ease-in-out 0.8ms;
 }
 
-/* Media Queries for Responsive Design */
+/* Media Queries pour le design responsive */
 @media (min-width: 768px) {
     .pokemon-info {
         flex-direction: row;
         align-items: flex-start;
-        justify-content: space-between;
+        justify-content: space-between; /* Ajusté pour l'alignement approprié */
     }
 
     .pokemon-image {
-        margin-right: 10px;
+        margin-right: 20px; /* Ajout de margin-right pour l'espacement */
         margin-left: 0;
-        max-width: 50%;
     }
 
     .pokemon-details {
-        max-width: 35%;
-        margin-right: 200px;
         text-align: left;
     }
 }
@@ -159,13 +159,9 @@ button:active {
 
     .pokemon-image {
         margin-bottom: 20px;
-        max-width: 100%;
     }
 
     .pokemon-details {
-        max-width: 100%;
-        margin: 0;
         text-align: center;
     }
 }
-
