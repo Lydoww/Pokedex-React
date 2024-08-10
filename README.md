@@ -18,7 +18,7 @@ Welcome to the Pokedex project! This is a comprehensive Pokedex application buil
 You can access the live demo of the application here: [Pokedex Demo](https://pokedex-made-with-react.netlify.app/)
 
 This demo is in French; the translation is not yet available.  
-The [API] used is: (https://tyradex.vercel.app/api/v1/pokemon)
+The API used is: https://tyradex.vercel.app/api/v1/pokemon
 
 
 ## Getting Started
